@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:fragment="headerfiles">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/5.0.1/css/bootstrap.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}"/>
+        <script th:src="@{/webjars/jquery/3.6.0/jquery.js}" ></script> 
+    </head>
+    <body>
+        <footer th:fragment="footer" class="my-5 text-muted text-center text-small">
+            <p class="mb-1">© 2021 Kylin SONG</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="https://cloudadc.github.io/">cloudadc.io</a></li>
+                <li class="list-inline-item"><a href="https://ksoong.org/">ksoong.org</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
