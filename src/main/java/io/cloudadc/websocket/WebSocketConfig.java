@@ -13,6 +13,7 @@ public class WebSocketConfig implements WebSocketConfigurer {
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 
 		registry.addHandler(new MyTextWebSocketHandler(), "/rlzy/ws");
+		registry.addHandler(new MyTextWebSocketHandler(), "/rlzy/websocket");
 	}
 
 }

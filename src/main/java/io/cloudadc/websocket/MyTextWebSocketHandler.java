@@ -1,6 +1,7 @@
 package io.cloudadc.websocket;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -36,7 +37,9 @@ public class MyTextWebSocketHandler extends TextWebSocketHandler {
 		LOGGER.info(session.getId() + " received: [" + message.getPayload() + "]");
 		sessions.forEach(webSocketSession -> {
 			try {
-				webSocketSession.sendMessage(message);
+				Msg msg = new Msg(session.getId(), message.getPayload(), new Date());
+				TextMessage toClient = new TextMessage(msg.payload());
+				webSocketSession.sendMessage(toClient);
 			} catch (IOException e) {
 				LOGGER.error("Error occurred.", e);
 			}
