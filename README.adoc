@@ -54,11 +54,12 @@ Connect to Server via  ws://localhost:8010/rlzy/websocket
 [source, bash]
 .*Check the Spring Boot Server Log*
 ----
-2021-05-23 00:16:15.304  INFO 77575 --- [nio-8010-exec-1] i.c.websocket.MyTextWebSocketHandler     : Connection Established: StandardWebSocketSession[id=93f23805-e023-7688-85a4-24da0f4762dd, uri=ws://localhost:8010/rlzy/ws]
-2021-05-23 00:16:15.308  INFO 77575 --- [nio-8010-exec-1] i.c.websocket.MyTextWebSocketHandler     : 93f23805-e023-7688-85a4-24da0f4762dd received: [Hello, World]
-2021-05-23 00:16:21.074  INFO 77575 --- [nio-8010-exec-2] i.c.websocket.MyTextWebSocketHandler     : Connection Closed: StandardWebSocketSession[id=93f23805-e023-7688-85a4-24da0f4762dd, uri=ws://localhost:8010/rlzy/ws]
-2021-05-23 00:17:48.616  INFO 77575 --- [nio-8010-exec-3] i.c.websocket.MyTextWebSocketHandler     : Connection Established: StandardWebSocketSession[id=c75b793e-340a-297b-3a75-93c587f7adfa, uri=ws://localhost:8010/rlzy/websocket]
-2021-05-23 00:17:48.619  INFO 77575 --- [nio-8010-exec-4] i.c.websocket.MyTextWebSocketHandler     : c75b793e-340a-297b-3a75-93c587f7adfa received: [This Test Mssge From Kylin SONG]
-2021-05-23 00:18:54.034  INFO 77575 --- [nio-8010-exec-5] i.c.websocket.MyTextWebSocketHandler     : Connection Closed: StandardWebSocketSession[id=c75b793e-340a-297b-3a75-93c587f7adfa, uri=ws://localhost:8010/rlzy/websocket]
+Connection Established: StandardWebSocketSession[id=93f23805-e023-7688-85a4-24da0f4762dd, uri=ws://localhost:8010/rlzy/ws]
+93f23805-e023-7688-85a4-24da0f4762dd received: [Hello, World]
+Connection Closed: StandardWebSocketSession[id=93f23805-e023-7688-85a4-24da0f4762dd, uri=ws://localhost:8010/rlzy/ws]
+
+Connection Established: StandardWebSocketSession[id=c75b793e-340a-297b-3a75-93c587f7adfa, uri=ws://localhost:8010/rlzy/websocket]
+c75b793e-340a-297b-3a75-93c587f7adfa received: [This Test Mssge From Kylin SONG]
+Connection Closed: StandardWebSocketSession[id=c75b793e-340a-297b-3a75-93c587f7adfa, uri=ws://localhost:8010/rlzy/websocket]
 ----
 
