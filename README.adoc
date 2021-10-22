@@ -26,6 +26,28 @@ This will expose entrypoint:
 * http://localhost:8010/websocket - A local test startup web page
 * http://localhost:8010/rlzy/foo - A REST API
 
+== Run with Container
+
+[source, bash]
+.*build*
+----
+docker build -t websocket-server .
+----
+
+[source, bash]
+.*Run*
+----
+docker run -p 8010:8010 websocket-server
+----
+
+[source, bash]
+.*Push to DockerHub*
+----
+docker tag websocket-server:latest cloudadc/websocket-server:1.0
+docker push cloudadc/websocket-server:1.0
+----
+
+
 == Node.js Client
 
 [source, bash]
